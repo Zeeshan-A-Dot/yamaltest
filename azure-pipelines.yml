@@ -1,12 +1,10 @@
+name: $(BuildDefinitionName)-$(Date:yyyyMMdd).$(Rev:.r)
+
 trigger:
 - master
 
 pool:
   vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 steps:
 - script: md tools
