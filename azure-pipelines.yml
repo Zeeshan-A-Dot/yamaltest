@@ -1,13 +1,11 @@
+name: $(BuildDefinitionName)-$(Date:yyyyMMdd).$(Rev:.r)
+
 trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
+  vmImage: 'vs2017-win2016'
+  
 steps:
 - script: md tools
   displayName: 'Create tools directory'
